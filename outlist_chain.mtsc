@@ -107,9 +107,3 @@ s_
     dis.txt ("Median Signal Strength: " + median_strength + " dB")  
 }  
 
-[3.5] | {  
-    dis.txt ("Final Statistics Summary:")  
-    dis.txt ("Total Signals Processed: " + scan_data.size())  
-    dis.txt ("Filtered Signals: " + filtered_data.size())  
-    dis.txt ("Signal Analysis Complete.")  
-}  
