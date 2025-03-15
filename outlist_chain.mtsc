@@ -1,0 +1,115 @@
+s_
+
+!pop def.UNI set<freq:range>(scan_range) == 
+    low: 88.0MHz  
+    high: 108.0MHz  
+    min_strength: 50  
+
+!pop def.UNI set<stats> == 
+    total_scans: 0  
+    valid_signals: 0  
+    total_strength: 0  
+
+[3.5] | {  
+    dis.txt ("Analyzing SDR data...")  
+
+    filtered_data = []  
+
+    loop (sig: scan_data) {  
+        if (sig.freq >= scan_range.low && sig.freq <= scan_range.high) {  
+            if (sig.strength >= min_strength) {  
+                filtered_data.append(sig)  
+                stats.valid_signals += 1  
+                stats.total_strength += sig.strength  
+            }  
+        }  
+    }  
+
+    dis.txt ("Filtered Signals:")  
+
+    loop (sig: filtered_data) {  
+        dis.txt ("Signal Frequency: " + sig.freq + " MHz")  
+        dis.txt ("Signal Strength: " + sig.strength + " dB")  
+        dis.txt ("------------------------------")  
+    }  
+
+    if (filtered_data.size() == 0) {  
+        dis.txt ("No valid signals found within the given range!")  
+    } else {  
+        avg_strength = stats.total_strength / stats.valid_signals  
+        dis.txt ("Average Signal Strength: " + avg_strength + " dB")  
+    }  
+}  
+
+[3.5] | {  
+    dis.txt ("Advanced Signal Analysis:")  
+    max_strength_signal = filtered_data[0]  
+    min_strength_signal = filtered_data[0]  
+
+    loop (sig: filtered_data) {  
+        if (sig.strength > max_strength_signal.strength) {  
+            max_strength_signal = sig  
+        }  
+        if (sig.strength < min_strength_signal.strength) {  
+            min_strength_signal = sig  
+        }  
+    }  
+
+    dis.txt ("Max Strength Signal: " + max_strength_signal.freq + " MHz | " + max_strength_signal.strength + " dB")  
+    dis.txt ("Min Strength Signal: " + min_strength_signal.freq + " MHz | " + min_strength_signal.strength + " dB")  
+}  
+
+[3.5] | {  
+    dis.txt ("Signal Frequency Histogram:")  
+    freq_bins = []  
+
+    loop (sig: filtered_data) {  
+        bin_index = (sig.freq - scan_range.low) / 1.0  
+        if (freq_bins.size() <= bin_index) {  
+            freq_bins.resize(bin_index + 1, 0)  
+        }  
+        freq_bins[bin_index] += 1  
+    }  
+
+    loop (i: 0, freq_bins.size()) {  
+        dis.txt ("Frequency Range " + (scan_range.low + i) + " MHz: " + freq_bins[i] + " signals")  
+    }  
+}  
+
+[3.5] | {  
+    dis.txt ("Signal Strength Distribution:")  
+    strength_bins = []  
+
+    loop (sig: filtered_data) {  
+        bin_index = (sig.strength - 50) / 10  
+        if (strength_bins.size() <= bin_index) {  
+            strength_bins.resize(bin_index + 1, 0)  
+        }  
+        strength_bins[bin_index] += 1  
+    }  
+
+    loop (i: 0, strength_bins.size()) {  
+        dis.txt ("Strength Range " + (50 + i * 10) + " dB: " + strength_bins[i] + " signals")  
+    }  
+}  
+
+[3.5] | {  
+    dis.txt ("Median Signal Strength:")  
+    sorted_strengths = []  
+
+    loop (sig: filtered_data) {  
+        sorted_strengths.append(sig.strength)  
+    }  
+
+    sorted_strengths.sort()  
+    median_strength = sorted_strengths[sorted_strengths.size() / 2]  
+
+    dis.txt ("Median Signal Strength: " + median_strength + " dB")  
+}  
+
+[3.5] | {  
+    dis.txt ("Final Statistics Summary:")  
+    dis.txt ("Total Signals Processed: " + scan_data.size())  
+    dis.txt ("Filtered Signals: " + filtered_data.size())  
+    dis.txt ("Signal Analysis Complete.")  
+}  
