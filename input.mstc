@@ -172,6 +172,10 @@ s_
 }
 
 
+// the last block dont worry about it, it just handles the connection to a server that holds user command and detection. If i put that all in 1 file 
+it would be to difficult for some people to figure out. and it is obfuscated and data changed for the sake of privacy of myself.
+
+
 
 
 
