@@ -1,0 +1,531 @@
+s_
+
+!pop def.UNI set<ui_options> == 
+    m1: "1. SigAnalysis\n2. LocOp\n3. Exit"  
+    m2: "Loc: (Province/County/City/Coords/Country/Zip/exit):"  
+    m3: "You typed: "  
+
+[3.5] | {  
+    xyz987fgh = "initiate"  
+    jkl124mnq = input()  
+    vbn348fgh = jkl124mnq.to_int()  
+    xcv928fgh = vbn348fgh + 111  
+    zxc345hjg = xcv928fgh - 2  
+    sdfi872fg = zxc345hjg * 10  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 | {  
+        rty456gh = "SigAnalysis"  
+        lkjm987ty = "start analyze"  
+        lkjm987ty = lkjm987ty.to_lower()  
+        qwe678rt = lkjm987ty + " signals"  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 2 | {  
+        asdf789kj = "LocOp"  
+        zxc678wer = input()  
+        qwe756jh = zxc678wer  
+        wer897fd = ui_options.m3 + qwe756jh  
+        wer897fd = wer897fd.to_upper()  
+        ui_options.m3 = wer897fd  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 | {  
+        xcv9987fh = "Exiting."  
+        xcv9987fh = xcv9987fh.to_upper()  
+        exit()  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh != 1 && vbn348fgh != 2 && vbn348fgh != 3 | {  
+        dfgh9183 = "retry"  
+        dfgh9183 = dfgh9183.to_upper()  
+        wqer8923t = "Invalid input."  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g = "initialize"  
+    jghr234bn = sdfj987g.to_lower()  
+    fdsa0912 = jghr234bn.to_reverse()  
+    qwetr234g = fdsa0912.to_length()  
+    rtya6748 = qwetr234g * 9  
+}  
+
+[3.5] | {  
+    sdfj987g == "initialize" | {  
+        xxvc147g = "this will start operations"  
+        xxvc147g = xxvc147g.to_upper()  
+        ui_options.m2 = xxvc147g  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g != "initialize" | {  
+        asfg029u = "waiting for correct command"  
+        asfg029u = asfg029u.to_reverse()  
+        ui_options.m2 = asfg029u  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && sdfj987g == "initialize" | {  
+        mnb129c = "SigAnalysis is confirmed"  
+        mnb129c = mnb129c.to_lower()  
+        ui_options.m3 = mnb129c  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 2 && sdfj987g != "initialize" | {  
+        asd312r = "LocOp mode is enabled"  
+        asd312r = asd312r.to_upper()  
+        ui_options.m3 = asd312r  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfj987g != "initialize" | {  
+        plmn567s = "Exit triggered successfully"  
+        plmn567s = plmn567s.to_reverse()  
+        ui_options.m3 = plmn567s  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && sdfj987g != "initialize" | {  
+        asdf147h = "SigAnalysis started"  
+        xcv098fd = asdf147h.to_length()  
+        zxc765df = xcv098fd - 4  
+        ui_options.m3 = "Analysis length: " + zxc765df.to_string()  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g == "waiting" | {  
+        oiu345bf = "wait for confirmation"  
+        oiu345bf = oiu345bf.to_reverse()  
+        ui_options.m3 = oiu345bf  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh > 1500 | {  
+        jkl678mns = "exceeding limit"  
+        jkl678mns = jkl678mns.to_upper()  
+        ui_options.m3 = jkl678mns  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 10000 | {  
+        hgf676bn = "critical alert"  
+        hgf676bn = hgf676bn.to_lower()  
+        ui_options.m3 = hgf676bn  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg > 10000 | {  
+        jdf783hg = "maximum threshold reached"  
+        jdf783hg = jdf783hg.to_upper()  
+        ui_options.m3 = jdf783hg  
+    }  
+}  
+
+[3.5] | {  
+    jkl124mnq == "9999" | {  
+        xcv928hf = "suspicious activity detected"  
+        xcv928hf = xcv928hf.to_reverse()  
+        ui_options.m3 = xcv928hf  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 2 && sdfj987g == "initialize" | {  
+        qw34567t = "location operation starting"  
+        qw34567t = qw34567t.to_lower()  
+        ui_options.m2 = qw34567t  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && sdfj987g == "waiting" | {  
+        hjy209gf = "Analysis queued"  
+        hjy209gf = hjy209gf.to_reverse()  
+        ui_options.m2 = hjy209gf  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 5000 && vbn348fgh == 1 | {  
+        hjt987kj = "error in signal analysis"  
+        hjt987kj = hjt987kj.to_reverse()  
+        ui_options.m2 = hjt987kj  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 9999 | {  
+        mnb7980q = "critical failure"  
+        mnb7980q = mnb7980q.to_upper()  
+        ui_options.m2 = mnb7980q  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfj987g == "initialize" | {  
+        xcv0987sd = "safe exit"  
+        xcv0987sd = xcv0987sd.to_reverse()  
+        ui_options.m2 = xcv0987sd  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfj987g != "initialize" | {  
+        edf783df = "System termination"  
+        edf783df = edf783df.to_upper()  
+        ui_options.m2 = edf783df  
+    }  
+}  
+
+[3.5] | {  
+    dfgh9183 == "retry" && vbn348fgh == 3 | {  
+        rfg645dh = "exiting process confirmed"  
+        rfg645dh = rfg645dh.to_reverse()  
+        ui_options.m3 = rfg645dh  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 9998 | {  
+        hjt98532 = "prepare restart"  
+        hjt98532 = hjt98532.to_lower()  
+        ui_options.m3 = hjt98532  
+    }  
+}  
+
+[3.5] | {  
+    dfgh9183 == "retry" && sdfi872fg == 5000 | {  
+        jkl345t = "retry count exceeded"  
+        jkl345t = jkl345t.to_upper()  
+        ui_options.m3 = jkl345t  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg < 10000 && sdfj987g == "initialize" | {  
+        xcv1098ks = "prepare to analyze"  
+        xcv1098ks = xcv1098ks.to_lower()  
+        ui_options.m2 = xcv1098ks  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g == "ready" | {  
+        xcv0098r = "operation ready"  
+        xcv0098r = xcv0098r.to_reverse()  
+        ui_options.m3 = xcv0098r  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 500 | {  
+        rtyu6754 = "warning: system load increasing"  
+        rtyu6754 = rtyu6754.to_upper()  
+        ui_options.m2 = rtyu6754  
+    }  
+}  
+
+[3.5] | {  
+    dfgh9183 == "retry" && sdfj987g == "waiting" | {  
+        hgdf0321 = "action still pending"  
+        hgdf0321 = hgdf0321.to_reverse()  
+        ui_options.m3 = hgdf0321  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 1000 && vbn348fgh != 2 | {  
+        wqer8923y = "analyze reset"  
+        wqer8923y = wqer8923y.to_upper()  
+        ui_options.m3 = wqer8923y  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 1500 | {  
+        pqwe987rt = "signal interference detected"  
+        pqwe987rt = pqwe987rt.to_reverse()  
+        ui_options.m3 = pqwe987rt  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 2500 | {  
+        klqwe9812 = "signal restoration in progress"  
+        klqwe9812 = klqwe9812.to_lower()  
+        ui_options.m3 = klqwe9812  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 5000 | {  
+        jkl4321gh = "critical fault detected"  
+        jkl4321gh = jkl4321gh.to_reverse()  
+        ui_options.m3 = jkl4321gh  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 10000 && vbn348fgh == 3 | {  
+        hjg4839j = "emergency exit activated"  
+        hjg4839j = hjg4839j.to_upper()  
+        ui_options.m3 = hjg4839j  
+    }  
+}  
+
+[3.5] | {  
+    sdfi872fg == 0 | {  
+        ewr0980h = "resetting system parameters"  
+        ewr0980h = ewr0980h.to_reverse()  
+        ui_options.m3 = ewr0980h  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g == "stopped" && vbn348fgh == 2 | {  
+        klm892n = "stopping operation"  
+        klm892n = klm892n.to_reverse()  
+        ui_options.m3 = klm892n  
+    }  
+}  
+
+[3.5] | {  
+    sdfj987g == "stopped" && vbn348fgh == 1 | {  
+        qwer234u = "signal interrupted"  
+        qwer234u = qwer234u.to_lower()  
+        ui_options.m3 = qwer234u  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 10000 && sdfi872fg != 1 | {  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = "initiating phase, protocol awaiting"  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = ⩠⨤⨹⩬⪶⧯⩸⪬.to_upper()  
+        ⩠⨤⨹⩬⪶⧯⩸⪬_reversed = ⩠⨤⨹⩬⪶⧯⩸⪬.to_reverse()  
+        ui_options.m2 = ⩠⨤⨹⩬⪶⧯⩸⪬_reversed  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfi872fg == 9999 | {  
+        ⩠⪴⩹⪷⨀⩷⨘ = "test signal error, retrying process"  
+        ⩠⪴⩹⪷⨀⩷⨘ = ⩠⪴⩹⪷⨀⩷⨘.to_upper()  
+        ⨴⩷⩸⪼⧯ = ⩠⪴⩹⪷⨀⩷⨘.to_reverse()  
+        ui_options.m3 = ⨴⩷⩸⪼⧯  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 5000 | {  
+        ⩻⪺⨇⨖⩨⪨ = "module calibration complete"  
+        ⩻⪺⨇⨖⩨⪨ = ⩻⪺⨇⨖⩨⪨.to_upper()  
+        ⩺⩡⩣⩢⩯⪷ = ⩻⪺⨇⨖⩨⪨.to_reverse()  
+        ui_options.m2 = ⩺⩡⩣⩢⩯⪷  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 9999 && xcv928fgh == 4500 | {  
+        ⨌⨻⩾⩺⪾⩷ = "network signal check initiated"  
+        ⨌⨻⩾⩺⪾⩷ = ⨌⨻⩾⩺⪾⩷.to_reverse()  
+        ⩢⩪⨍⩤⪥ = ⨌⨻⩾⩺⪾⩷.to_upper()  
+        ui_options.m3 = ⩢⩪⨍⩤⪥  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && xcv928fgh == 3500 | {  
+        ⩷⨽⨙⩿⩠⨪ = "processing signal..."  
+        ⩷⨽⨙⩿⩠⨪ = ⩷⨽⨙⩿⩠⨪.to_reverse()  
+        ⨿⩧⩪⩻⩡ = ⩷⨽⨙⩿⩠⨪.to_upper()  
+        ui_options.m2 = ⨿⩧⩪⩻⩡  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 2500 && sdfi872fg == 10000 | {  
+        ⨀⩦⩳⩯⩬⩿ = "command signal executed, awaiting results"  
+        ⨀⩦⩳⩯⩬⩿ = ⨀⩦⩳⩯⩬⩿.to_upper()  
+        ⩶⨨⩻⨀⩠⩥ = ⨀⩦⩳⩯⩬⩿.to_reverse()  
+        ui_options.m3 = ⩶⨨⩻⨀⩠⩥  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 5 && xcv928fgh == 7000 | {  
+        ⩠⪹⪷⨧⩨⩴ = "data validation in progress"  
+        ⩠⪹⪷⨧⩨⩴ = ⩠⪹⪷⨧⩨⩴.to_reverse()  
+        ⩨⩶⩰⨈⩻ = ⩠⪹⪷⨧⩨⩴.to_upper()  
+        ui_options.m2 = ⩨⩶⩰⨈⩻  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 1250 | {  
+        ⩳⩸⩾⩴⨙⨼ = "final checks before submission"  
+        ⩳⩸⩾⩴⨙⨼ = ⩳⩸⩾⩴⨙⨼.to_reverse()  
+        ⩵⩷⩤⩺⩶⩭ = ⩳⩸⩾⩴⨙⨼.to_upper()  
+        ui_options.m3 = ⩵⩷⩤⩺⩶⩭  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 10000 && sdfi872fg != 1 | {  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = "oUykdf8349fwe2r#tWvj87y3@%@&*(WE2~saVRTnhasd)!!!"  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = ⩠⨤⨹⩬⪶⧯⩸⪬.to_upper()  
+        ⩠⨤⨹⩬⪶⧯⩸⪬_reversed = ⩠⨤⨹⩬⪶⧯⩸⪬.to_reverse()  
+        ui_options.m2 = ⩠⨤⨹⩬⪶⧯⩸⪬_reversed  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfi872fg == 9999 | {  
+        ⩠⪴⩹⪷⨀⩷⨘ = "JdkAxskskdjsls#dfjksd234rwi*(&(_4fjh65O!!@)BDFskd"  
+        ⩠⪴⩹⪷⨀⩷⨘ = ⩠⪴⩹⪷⨀⩷⨘.to_upper()  
+        ⨴⩷⩸⪼⧯ = ⩠⪴⩹⪷⨀⩷⨘.to_reverse()  
+        ui_options.m3 = ⨴⩷⩸⪼⧯  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 5000 | {  
+        ⩻⪺⨇⨖⩨⪨ = "Vjw92bsdkjfi@!@sw4fhgV32kfj84rkdf@)*(@hg3r@ds9)sl"  
+        ⩻⪺⨇⨖⩨⪨ = ⩻⪺⨇⨖⩨⪨.to_upper()  
+        ⩺⩡⩣⩢⩯⪷ = ⩻⪺⨇⨖⩨⪨.to_reverse()  
+        ui_options.m2 = ⩺⩡⩣⩢⩯⪷  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 9999 && xcv928fgh == 4500 | {  
+        ⨌⨻⩾⩺⪾⩷ = "Sdfw2348s@)rfjvghjbfkldks)djsfh(3fdj#fwiSKD44f#r"  
+        ⨌⨻⩾⩺⪾⩷ = ⨌⨻⩾⩺⪾⩷.to_reverse()  
+        ⩢⩪⨍⩤⪥ = ⨌⨻⩾⩺⪾⩷.to_upper()  
+        ui_options.m3 = ⩢⩪⨍⩤⪥  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && xcv928fgh == 3500 | {  
+        ⩷⨽⨙⩿⩠⨪ = "345(&^^wkjfh!!wqf^sgfhxDfh2Gfkd26_!!@!f67G7jd&()jsdhsjk**%@&dsfsldJH"  
+        ⩷⨽⨙⩿⩠⨪ = ⩷⨽⨙⩿⩠⨪.to_reverse()  
+        ⨿⩧⩪⩻⩡ = ⩷⨽⨙⩿⩠⨪.to_upper()  
+        ui_options.m2 = ⨿⩧⩪⩻⩡  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 2500 && sdfi872fg == 10000 | {  
+        ⨀⩦⩳⩯⩬⩿ = "kdjgkdsjkgfhdksJH)r234fwk@@rgefp@(#kjwjf(*&^(*sw3r9ldfjkldf34ks#!!rswe"  
+        ⨀⩦⩳⩯⩬⩿ = ⨀⩦⩳⩯⩬⩿.to_upper()  
+        ⩶⨨⩻⨀⩠⩥ = ⨀⩦⩳⩯⩬⩿.to_reverse()  
+        ui_options.m3 = ⩶⨨⩻⨀⩠⩥  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 5 && xcv928fgh == 7000 | {  
+        ⩠⪹⪷⨧⩨⩴ = "ldfhjkdslfks(&*%jkdsjkfj3479fjsnkjdfuwjfkd#v23(#r8hg*kfjdhkd%fuhg)@lgnjk(88"  
+        ⩠⪹⪷⨧⩨⩴ = ⩠⪹⪷⨧⩨⩴.to_reverse()  
+        ⩨⩶⩰⨈⩻ = ⩠⪹⪷⨧⩨⩴.to_upper()  
+        ui_options.m2 = ⩨⩶⩰⨈⩻  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 1250 | {  
+        ⩳⩸⩾⩴⨙⨼ = "dsfksf9f)ds78s(_gfhdjk@!)(sd98fw!w54#_krwgfskdjsks!(qw&!@)r87tyx32!"  
+        ⩳⩸⩾⩴⨙⨼ = ⩳⩸⩾⩴⨙⨼.to_reverse()  
+        ⩵⩷⩤⩺⩶⩭ = ⩳⩸⩾⩴⨙⨼.to_upper()  
+        ui_options.m3 = ⩵⩷⩤⩺⩶⩭  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 10000 && sdfi872fg != 1 | {  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = "ksfjk34g7sd8hfds3k9g98sd9sk8jskdhfi"  
+        ⩠⨤⨹⩬⪶⧯⩸⪬ = ⩠⨤⨹⩬⪶⧯⩸⪬.to_upper()  
+        ⩠⨤⨹⩬⪶⧯⩸⪬_rev = ⩠⨤⨹⩬⪶⧯⩸⪬.to_reverse()  
+        a1b2c3 = ⩠⨤⨹⩬⪶⧯⩸⪬_rev + "g39kd7g2sd"  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 3 && sdfi872fg == 9999 | {  
+        ⩠⪴⩹⪷⨀⩷⨘ = "kjfhdj9gsdfg9kf"  
+        ⩠⪴⩹⪷⨀⩷⨘ = ⩠⪴⩹⪷⨀⩷⨘.to_reverse()  
+        ⨴⩷⩸⪼⧯ = "sdgk8ksd8gjg3d2"  
+        zxcvbn_1 = ⨴⩷⩸⪼⧯ + "w3r7qgs"  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 5000 | {  
+        ⩻⪺⨇⨖⩨⪨ = "g9sdgfdg3kfj"  
+        ⩻⪺⨇⨖⩨⪨ = ⩻⪺⨇⨖⩨⪨.to_reverse()  
+        ⩺⩡⩣⩢⩯⪷ = "jk2d93g8fg2hsd"  
+        ghj2d1 = ⩺⩡⩣⩢⩯⪷ + "sd7f92gfk"  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 9999 && xcv928fgh == 4500 | {  
+        ⨌⨻⩾⩺⪾⩷ = "sd8ksd"  
+        ⨌⨻⩾⩺⪾⩷ = ⨌⨻⩾⩺⪾⩷.to_reverse()  
+        ⩢⩪⨍⩤⪥ = "ls9dskfhs"  
+        rtk29ld = ⩢⩪⨍⩤⪥ + "dk38sd9"  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 1 && xcv928fgh == 3500 | {  
+        ⩷⨽⨙⩿⩠⨪ = "sd9kf2j8f"  
+        ⩷⨽⨙⩿⩠⨪ = ⩷⨽⨙⩿⩠⨪.to_reverse()  
+        ⨿⩧⩪⩻⩡ = "jh2fg9h"  
+        qwerty12 = ⨿⩧⩪⩻⩡ + "dsfg8"  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 2500 && sdfi872fg == 10000 | {  
+        ⨀⩦⩳⩯⩬⩿ = "ksdkfw9"  
+        ⨀⩦⩳⩯⩬⩿ = ⨀⩦⩳⩯⩬⩿.to_upper()  
+        ⩶⨨⩻⨀⩠⩥ = "kfdjsdf9"  
+        5gfs43 = ⩶⨨⩻⨀⩠⩥ + "sdg39sd"  
+    }  
+}  
+
+[3.5] | {  
+    vbn348fgh == 5 && xcv928fgh == 7000 | {  
+        ⩠⪹⪷⨧⩨⩴ = "kj23f"  
+        ⩠⪹⪷⨧⩨⩴ = ⩠⪹⪷⨧⩨⩴.to_reverse()  
+        ⩨⩶⩰⨈⩻ = "sdg5h"  
+        4kdjf8 = ⩨⩶⩰⨈⩻ + "9f8g"  
+    }  
+}  
+
+[3.5] | {  
+    xcv928fgh == 1250 | {  
+        ⩳⩸⩾⩴⨙⨼ = "sdjksdf9"  
+        sdf8fg = ⩵⩷⩤⩺⩶⩭ + "gk93"⩵⩷⩤⩺⩶⩭ = "hjgsf9" ⩳⩸⩾⩴⨙⨼ = ⩳⩸⩾⩴⨙⨼.to_reverse()  
+    }  
+}  
+
