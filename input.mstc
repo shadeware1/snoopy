@@ -1,0 +1,177 @@
+s_
+
+[3.5] | {  
+    d1 = "Welcome to snoopy.xxe"  
+    d2 = "Type Province, County, City, Coordinates, Country, Zip Code, or type 'gui' to open the GUI, or 'exit' to quit:"  
+    dis.txt (d1)  
+    dis.txt (d2)  
+    location = input()  
+    dis.txt ("You entered location: " + location)  
+}  
+
+[3.5] | {  
+    z1 == "exit" | {  
+        d3 = "Exiting program."  
+        dis.txt (d3)  
+        exit()  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "province" | {  
+        d4 = "Processing Province Input..."  
+        dis.txt (d4)  
+        z2 = location + " z(1039139) == ./src_usr:chain"  
+        dis.txt (z2)  
+        d5 = "Device types: Win11_Home, WinServer2016, Ubuntu, Kali, ArchLinux, MacOS, iOS18, Android"  
+        dis.txt (d5)  
+        z3 = input()  
+        dis.txt ("You selected: " + z3)  
+        z3 == "Win11_Home" | {  
+            d6 = "Getting IPs for Win11_Home..."  
+            dis.txt (d6)  
+            z4 = ["61.121.187.195", "166.171.200.172", "190.82.231.20"]  
+            loop (x1: z4) {  
+                z5 = x1 + " - Win11_Home - " + location + " z(1039139) == ./src_usr:chain - MAC: CA:AE:5D:B8:DF:B4 - RSSI: -58"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "WinServer2016" | {  
+            d7 = "Getting IPs for WinServer2016..."  
+            dis.txt (d7)  
+            z4 = ["190.82.231.20", "66.229.15.254", "36.246.64.76"]  
+            loop (x2: z4) {  
+                z5 = x2 + " - WinServer2016 - " + location + " z(1039139) == ./src_usr:chain - MAC: DD:21:04:95:A3:B5 - RSSI: -38"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "Ubuntu" | {  
+            d8 = "Getting IPs for Ubuntu..."  
+            dis.txt (d8)  
+            z4 = ["68.72.136.99", "152.226.73.162", "54.168.66.46"]  
+            loop (x3: z4) {  
+                z5 = x3 + " - Ubuntu - " + location + " z(1039139) == ./src_usr:chain - MAC: AE:75:05:6E:10:F4 - RSSI: -75"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "Kali" | {  
+            d9 = "Getting IPs for Kali..."  
+            dis.txt (d9)  
+            z4 = ["54.168.66.46", "188.190.16.81", "50.144.88.144"]  
+            loop (x4: z4) {  
+                z5 = x4 + " - Kali - " + location + " z(1039139) == ./src_usr:chain - MAC: 9D:79:FA:5E:80:46 - RSSI: -36"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "ArchLinux" | {  
+            d10 = "Getting IPs for ArchLinux..."  
+            dis.txt (d10)  
+            z4 = ["152.140.39.143", "40.129.117.8", "250.249.107.194"]  
+            loop (x5: z4) {  
+                z5 = x5 + " - ArchLinux - " + location + " z(1039139) == ./src_usr:chain - MAC: 16:7D:3A:FC:82:5A - RSSI: -50"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "MacOS" | {  
+            d11 = "Getting IPs for MacOS..."  
+            dis.txt (d11)  
+            z4 = ["152.226.73.162", "54.168.66.46", "188.190.16.81"]  
+            loop (x6: z4) {  
+                z5 = x6 + " - MacOS - " + location + " z(1039139) == ./src_usr:chain - MAC: 4B:3F:EB:27:79:29 - RSSI: -70"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "iOS18" | {  
+            d12 = "Getting IPs for iOS18..."  
+            dis.txt (d12)  
+            z4 = ["10.242.47.82", "152.140.39.143", "40.129.117.8"]  
+            loop (x7: z4) {  
+                z5 = x7 + " - iOS18 - " + location + " z(1039139) == ./src_usr:chain - MAC: C1:CD:E3:BA:77:BA - RSSI: -66"  
+                dis.txt (z5)  
+            }  
+        }  
+        z3 == "Android" | {  
+            d13 = "Getting IPs for Android..."  
+            dis.txt (d13)  
+            z4 = ["40.129.117.8", "250.249.107.194", "38.141.130.241"]  
+            loop (x8: z4) {  
+                z5 = x8 + " - Android - " + location + " z(1039139) == ./src_usr:chain - MAC: A3:06:19:F4:66:D4 - RSSI: -45"  
+                dis.txt (z5)  
+            }  
+        }  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "county" | {  
+        d14 = "Processing County Input..."  
+        dis.txt (d14)  
+        z6 = location + " Suburbs, z(1039139) == ./src_usr:chain"  
+        dis.txt (z6)  
+        z7 = input()  
+        dis.txt ("You selected: " + z7)  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "city" | {  
+        d15 = "Processing City Input..."  
+        dis.txt (d15)  
+        z10 = location + " City Center, z(1039139) == ./src_usr:chain"  
+        dis.txt (z10)  
+        z11 = input()  
+        dis.txt ("You selected: " + z11)  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "coordinates" | {  
+        d16 = "Processing Coordinates Input..."  
+        dis.txt (d16)  
+        z14 = "Coordinates: 35.6895° N, 51.3890° E " + location + " z(1039139) == ./src_usr:chain"  
+        dis.txt (z14)  
+        z15 = input()  
+        dis.txt ("You selected: " + z15)  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "country" | {  
+        d17 = "Processing Country Input..."  
+        dis.txt (d17)  
+        z18 = "Country: " + location + " z(1039139) == ./src_usr:chain"  
+        dis.txt (z18)  
+        z19 = input()  
+        dis.txt ("You selected: " + z19)  
+    }  
+}  
+
+[3.5] | {  
+    z1 == "zip_code" | {  
+        d18 = "Processing Zip Code Input..."  
+        dis.txt (d18)  
+        z22 = "Zip Code: 1039139 " + location + " z(1039139) == ./src_usr:chain"  
+        dis.txt (z22)  
+        z23 = input()  
+        dis.txt ("You selected: " + z23)  
+    }  
+}  
+
+[3.5] | {  
+    z1 != "exit" && z1 != "province" && z1 != "county" && z1 != "city" && z1 != "coordinates" && z1 != "country" && z1 != "zip_code" | {  
+        d19 = "Invalid input, please try again."  
+        dis.txt (d19)  
+    }  
+}  
+
+[8.1] | {
+    usr.con_
+    sh27 $$_<s82 #@@> /.&_11 shkj89 ajd9o 2 98 1__27487328364 hkjf8662hsjakloopp
+    ⩵ ⫷⧨⧷⪼⨒⩦⇌⩪𝓖⧲𝜟⩽⪡⩴ hchart::⨺⧩⨴⪲⩩⧟⩯⩳⩻⨻⧹℻⪮⧨⩺⧷⩻⩯⩢⧱⧼⩿⩾⩠⨤⨹⩬⪶⧯⩸⪬⩪⧽⧯⩦⩵
+    sTrait_nonuser
+}
+
+
+
+
+
