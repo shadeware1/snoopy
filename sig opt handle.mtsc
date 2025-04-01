@@ -1,0 +1,38 @@
+s_
+
+!pop all dataTypes:dis(txt_forms) re.active loop:display_render pkg.sdr $get open.sig "inp/otp" = open dis.MAIN_opt:block
+
+[3.5] | {
+       class:open_block | "open PFAR sig handling" {
+              sig_recv chain:usr_src(data; inp) handle(active) loop:$get_activeSig
+              iss_open paraForm from_inp(psActiveon:_sigReg) (inp:process) use:sig_mode GHS.pkg = active.type
+              stopGrab_inp active filter_sig stop&oprnGHDPS grab_sig
+       }
+}
+
+[3.2] | {
+       act_sig(process:data_prpPacket<sig_data:opt>(inp)
+       pr_valid:opt $get_responseSocket(active_sig) 
+       dis.txt = ("Process of signal data...")
+}
+
+[3.5] |  {
+       loop:sig_watch
+       $get_sig all.partType non.form(id:chain) {
+              stop:sig_time active(p.off)
+       }
+}
+
+[3.5] | {
+       enterCON:<hdDevice:sdr_142196('passive')>
+       dis.txt = ("PHDR waiting for signal transmission...")
+       active_sig(x) = watch(set:dataType) set isrp_sensativity:low_freq
+}
+
+[3.7] | {
+       passive_$get sendForm(opt) dst_PHDR(active_sig)
+       log_sig(opt) return:socket store:temp(application:cache) pass_data:relevant {
+              dis.txt = ("Signals launched for passive REC. Awaiting reponse...")
+       }
+       end_"PFAR sig handle"
+}
